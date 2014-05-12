@@ -12,7 +12,7 @@ if __name__=='__main__':
         'source':'index_nav'
     }
     response=opener.open(loginUrl,urllib.urlencode(params))
-    topicUrl='http://www.douban.com/group/topic/52497515/'
+    topicUrl=''
     if response.geturl()=='http://www.douban.com/accounts/login':
         html=response.read()
         imgUrl=re.search('<img id="captcha_image" src="(.*?)" alt="captcha" class="captcha_image"/>',html)
